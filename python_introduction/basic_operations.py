@@ -3,6 +3,6 @@ number2 = 5
 sum = number1 + number2
 difference = number1 - number2
 product = number1 * number2
-print("Addition of " + str(number1) + " and " + str(number2) + " is " + str(sum))
-print("Subtraction of " + str(number1) + " and " + str(number2) + " is " + str(difference))
-print("Multiplication of " + str(number1) + " and " + str(number2) + " is " + str(product))
+print(f"Addition of {number1} and {number2} is {sum}")
+print(f"Subtraction of {number1} and {number2} is {difference}")
+print(f"Multiplication of {number1} and {number2} is {product}")
