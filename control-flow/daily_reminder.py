@@ -11,11 +11,11 @@ def create_reminder(task, priority, time_bound):
     
     match priority:
         case "high":
-            reminder += " that requires immediate attention today!" if time_bound == "yes" else "."
+            reminder += " that requires immediate attention today!" if time_bound == "yes" else "Consider completing it when you have free time."
         case "medium":
-            reminder += " that should be completed soon." if time_bound == "yes" else "."
+            reminder += " that should be completed soon." if time_bound == "yes" else "Consider completing it when you have free time."
         case "low":
-            reminder += " that can be done at your convenience." if time_bound == "yes" else "."
+            reminder += " that can be done at your convenience." if time_bound == "yes" else "Consider completing it when you have free time."
         case _:
             reminder = "Invalid priority level entered."
 
