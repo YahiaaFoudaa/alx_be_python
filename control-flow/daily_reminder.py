@@ -7,7 +7,7 @@ def get_task():
     return task, priority, time_bound
 
 def create_reminder(task, priority, time_bound):
-    reminder = f"Reminder: '{task}' is a {priority} priority task"
+    reminder = f"'{task}' is a {priority} priority task"
     
     match priority:
         case "high":
@@ -24,7 +24,7 @@ def create_reminder(task, priority, time_bound):
 def main():
     task, priority, time_bound = get_task()
     reminder = create_reminder(task, priority, time_bound)
-    print(reminder)  # This is the print statement for the reminder
+    print(f"Reminder: '{reminder}")  # This is the print statement for the reminder
 
 if __name__ == "__main__":
     main()
