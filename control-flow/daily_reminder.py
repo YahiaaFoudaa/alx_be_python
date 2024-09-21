@@ -11,9 +11,9 @@ def create_reminder(task, priority, time_bound):
     
     match priority:
         case "high":
-            reminder += " that requires immediate attention today!" if time_bound == "yes" else "Consider completing it when you have free time."
+            reminder += " that requires immediate attention today!" if time_bound == "yes" else "Drop everything and work on it"
         case "medium":
-            reminder += " that should be completed soon." if time_bound == "yes" else "Consider completing it when you have free time."
+            reminder += " that should be completed soon." if time_bound == "yes" else "completing it ASAP."
         case "low":
             reminder += " that can be done at your convenience." if time_bound == "yes" else "Consider completing it when you have free time."
         case _:
