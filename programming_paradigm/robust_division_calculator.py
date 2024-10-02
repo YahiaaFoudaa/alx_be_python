@@ -15,4 +15,4 @@ def safe_divide(numerator, denominator):
     else:
         return f"The result of the division is {result:.2f}"
     finally:
-        return "Execution of the divide_numbers function is complete."
+        print("Execution of the divide_numbers function is complete.")
