@@ -33,6 +33,3 @@ class TestSimpleCalculator(unittest.TestCase):
 
 if __name__ == "__main__":
   unittest.main()
-
-
-# Remember to write additional test methods for subtract, multiply, and divide.
