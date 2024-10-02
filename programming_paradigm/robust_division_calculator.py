@@ -5,10 +5,10 @@ def safe_divide(numerator, denominator):
     try:
         result = numerator/denominator
     except ZeroDivisionError:
-        print("Error: You cannot divide by zero.")
+        print("Error: Cannot divide by zero.")
     except ValueError:
-        print("Error: Both arguments must be numbers.")
+        print("Error: Please enter numeric values only.")
     else:
-        print(f"The result is {result:.2f}")
+        print(f"The result of the division is {result:.2f}")
     finally:
         print("Execution of the divide_numbers function is complete.")
