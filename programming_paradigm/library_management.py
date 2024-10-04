@@ -1,6 +1,6 @@
 # Solidify understanding of basic OOP concepts in Python
 
-class book:
+class Book:
     def __init__(self, title, author):
         self.title = title
         self.author = author
