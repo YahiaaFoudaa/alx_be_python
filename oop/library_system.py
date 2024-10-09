@@ -27,7 +27,7 @@ class Library:
         self.books = []
     
     def add_book(self, book: Book):
-        self.books.append(Book)
+        self.books.append(book)
     
     def list_books(self):
         print("Books in Library:")
