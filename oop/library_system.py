@@ -11,7 +11,7 @@ class Book:
 
 class EBook(Book):
     def __init__(self, title: str, author: str, file_size: int):
-        super().__init__(title, author)  # Call the base class constructor
+        super().__init__(title, author)  # Call the base class constructo
         self.file_size = file_size
 
     def __str__(self):
