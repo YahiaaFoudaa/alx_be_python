@@ -29,13 +29,12 @@ class PrintBook(Book):
 
 class Library:
     def __init__(self):
-        self.books = []
+        self.books = []  # A list to store books
 
     def add_book(self, book: Book):
-        self.books.append(book)
-
-    def remove_book(self, book: Book):
-        self.books.remove(book)
+        self.books.append(book)  # Add a Book, EBook, or PrintBook instance to the library
 
     def list_books(self):
-        return "\n".join(str(book) for book in self.books)
+        print("Books in Library:")
+        for book in self.books:
+            print(book)  # Print details of each book in the library
