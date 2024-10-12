@@ -8,10 +8,10 @@ class Book:
     def __str__(self):
         return f"Book: {self.title} by {self.author}"
 
-
+8
 class EBook(Book):
     def __init__(self, title: str, author: str, file_size: int):
-        super().__init__(title, author)  # Call the base class constructo
+        super().__init__(title, author)  # Call the base class constructor
         self.file_size = file_size
 
     def __str__(self):
@@ -29,12 +29,13 @@ class PrintBook(Book):
 
 class Library:
     def __init__(self):
-        self.books = []  # A list to store books
+        self.books = []
 
     def add_book(self, book: Book):
-        self.books.append(book)  # Add a Book, EBook, or PrintBook instance to the library
+        self.books.append(book)
+
+    def remove_book(self, book: Book):
+        self.books.remove(book)
 
     def list_books(self):
-        print("Books in Library:")
-        for book in self.books:
-            print(book)  # Print details of each book in the library
+        return "\n".join(str(book) for book in self.books)
