@@ -35,6 +35,5 @@ class Library:
         self.books.append(book)  # Add a Book, EBook, or PrintBook instance to the library
 
     def list_books(self):
-        print("Books in Library:")
         for book in self.books:
             print(book)  # Print details of each book in the library
